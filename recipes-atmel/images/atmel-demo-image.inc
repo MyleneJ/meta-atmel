@@ -53,6 +53,7 @@ IMAGE_INSTALL = "\
     gdbserver \
     usbutils \
     wget \
+    dt-overlay-at91 \
     ${CORE_IMAGE_EXTRA_INSTALL} \
     "
 
