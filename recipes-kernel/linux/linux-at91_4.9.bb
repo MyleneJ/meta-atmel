@@ -5,7 +5,7 @@ LICENSE = "GPLv2"
 LIC_FILES_CHKSUM = "file://COPYING;md5=d7810fab7487fb0aad327b76f1be7cd7"
 
 # We need the overlays to be deployed before assembling the fitImage
-DEPENDS += "dt-overlay-at91"
+DEPENDS += "dt-overlay-at91 coreutils-native"
 
 inherit kernel kernel-fitimage-overlay
 
