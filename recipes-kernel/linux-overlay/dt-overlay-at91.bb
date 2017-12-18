@@ -22,8 +22,10 @@ FILES_${PN}_at91-sd = ""
 ALLOW_EMPTY_${PN}_at91-sd = "1"
 INSANE_SKIP_${PN}_at91-sd += "installed-vs-shipped"
 
+EXTRA_OEMAKE = 'GCC="${TARGET_PREFIX}gcc"'
+
 do_compile() {
-	make DTC=${STAGING_BINDIR_NATIVE}/dtc
+	oe_runmake DTC=${STAGING_BINDIR_NATIVE}/dtc
 }
 
 do_install() {
